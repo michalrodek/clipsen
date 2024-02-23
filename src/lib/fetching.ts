@@ -15,7 +15,7 @@ async function getFetchOptions() {
   };
 }
 
-async function _fetch(url: string, options: any) {
+async function _fetch(url: string, options: any): Promise<any> {
   try {
     const resp = await fetch(url, options);
 
