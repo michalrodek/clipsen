@@ -1,6 +1,5 @@
 import { Card, CardHeader, CardContent } from "./ui/card";
 import Link from "next/link";
-import Image from "next/image";
 import Eye from "./icons/eye";
 import { CardListProps, Range, StreamData, TwitchApiResponse } from "@/typings";
 import { getClips, getUser } from "@/lib/fetching";
@@ -47,7 +46,7 @@ export default async function CardList(props: CardListProps) {
           <Link key={clip.id} href={clip.url} target="_blank">
             <Card>
               <CardHeader>
-                <Image
+                <img
                   alt={clip.title}
                   src={clip.thumbnail_url}
                   width="600"
